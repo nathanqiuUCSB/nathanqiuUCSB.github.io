@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nathan Qiu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-brand">Nathan Qiu</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="top" class="hero">
+      <h1>Hi, I'm Nathan Qiu</h1>
+      <!-- Edit this tagline -->
+      <p class="tagline">Computer Science student at UCSB, focused on security &amp; detection engineering.</p>
+      <div class="cta-row">
+        <!-- Fill in real links below -->
+        <a class="btn btn-primary" href="mailto:nathanqiu@ucsb.edu">Email me</a>
+        <a class="btn" href="https://github.com/nathanqiuUCSB" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <!-- Edit this paragraph with your own background/interests -->
+      <p>
+        I'm a Computer Science student at UC Santa Barbara interested in cybersecurity,
+        particularly threat and detection engineering, vulnerability research, and building
+        practical tools. I like working on projects end-to-end -- from data pipelines to
+        the interfaces people actually use.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Internship Tracker</h3>
+          <p>
+            A local Flask + SQLite app for organizing an internship search: a status
+            pipeline (wishlist &rarr; applied &rarr; interviewing &rarr; offer), a scraper
+            framework pulling from GitHub internship lists and company Greenhouse/Lever
+            boards, a fuzzy-matching dedup engine, and a review queue with keyword-based
+            relevance ranking for security-focused roles.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">SQLAlchemy</span>
+            <span class="tag">Web Scraping</span>
+          </div>
+          <!-- Add a link once this repo is pushed to GitHub -->
+          <a class="project-link" href="#" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+
+        <article class="project-card project-card-placeholder">
+          <h3>Your next project</h3>
+          <p>Duplicate this card for each project you want to show off.</p>
+          <div class="tags">
+            <span class="tag">Tech</span>
+            <span class="tag">Stack</span>
+          </div>
+          <a class="project-link" href="#" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <!-- Edit these to match your actual skills -->
+      <ul class="skills-list">
+        <li>Python</li>
+        <li>SQL</li>
+        <li>Flask</li>
+        <li>Networking &amp; Security Fundamentals</li>
+        <li>Threat Detection</li>
+        <li>Git / GitHub</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>
+        Reach me at <a href="mailto:nathanqiu@ucsb.edu">nathanqiu@ucsb.edu</a>,
+        or find me on <a href="https://github.com/nathanqiuUCSB" target="_blank" rel="noopener">GitHub</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Nathan Qiu</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
