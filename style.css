@@ -93,17 +93,67 @@ a {
   margin: 0.9rem 0 0;
 }
 
-.project {
-  margin-top: 1.4rem;
+.entry, .project {
+  margin-top: 1.6rem;
 }
-.project:first-of-type {
+.entry:first-of-type, .project:first-of-type {
   margin-top: 0.9rem;
 }
-.project h3 {
-  margin: 0 0 0.3rem;
+
+.entry-header, .entry-subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0 1rem;
+}
+.entry-header strong, .project h3 {
   font-size: 1.05rem;
+}
+.project h3 {
+  margin: 0;
   font-weight: 700;
 }
+.project-subtitle {
+  font-weight: 400;
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.entry-date, .entry-location {
+  color: var(--muted);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+.entry-subheader {
+  margin-top: 0.15rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.entry ul, .project ul {
+  margin: 0.7rem 0 0;
+  padding-left: 1.2rem;
+}
+.entry li, .project li {
+  margin-top: 0.35rem;
+}
+
+.entry-links {
+  margin-top: 0.7rem !important;
+  font-size: 0.92rem;
+}
+
+.poster-embed {
+  margin-top: 1rem;
+  border: 1px solid var(--border);
+}
+.poster-embed embed {
+  width: 100%;
+  height: 520px;
+  display: block;
+}
+
 .project .meta {
   color: var(--muted);
   font-size: 0.9rem;

@@ -11,7 +11,6 @@
     <header class="header">
       <div class="header-text">
         <h1>Nathan Qiu</h1>
-        <!-- Edit these status lines -->
         <p class="subtitle">Computer Science at UCSB</p>
         <p class="subtitle">Focused on security &amp; detection engineering</p>
       </div>
@@ -23,7 +22,6 @@
     <nav class="nav">
       <a href="#about">About</a>
       <a href="#education">Education</a>
-      <a href="#research">Research</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
@@ -33,7 +31,6 @@
     <main>
       <section id="about" class="section">
         <h2>About</h2>
-        <!-- Edit this paragraph with your own background/interests -->
         <p>
           I'm a Computer Science student at UC Santa Barbara interested in cybersecurity,
           particularly threat and detection engineering, vulnerability research, and building
@@ -44,37 +41,167 @@
 
       <section id="education" class="section">
         <h2>Education</h2>
-        <!-- PLACEHOLDER: fill in real dates/coursework/honors -->
-        <p>
-          <strong>University of California, Santa Barbara</strong><br>
-          B.S. Computer Science &middot; [Expected graduation, e.g. Class of 2027]<br>
-          [Relevant coursework, GPA, or honors -- edit or remove this line]
-        </p>
-      </section>
-
-      <section id="research" class="section">
-        <h2>Research</h2>
-        <!-- PLACEHOLDER: describe any lab/research work, or remove this section -->
-        <p>
-          [Describe any research experience here -- advisor, lab, focus area, and what you
-          worked on. Delete this section if it doesn't apply yet.]
-        </p>
+        <div class="entry">
+          <div class="entry-header">
+            <strong>University of California, Santa Barbara</strong>
+            <span class="entry-date">Expected June 2028</span>
+          </div>
+          <div class="entry-subheader">
+            <em>Computer Science, B.S.</em>
+            <span class="entry-location">Santa Barbara, CA</span>
+          </div>
+          <ul>
+            <li>GPA: 4.0/4.0</li>
+            <li>
+              Relevant Courses: Data Structures and Algorithms, Computer Architecture,
+              Probability and Applied Statistics, C++ Problem Solving, Intermediate Python,
+              Vector Calculus, Differential Equations, Linear Algebra
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section id="experience" class="section">
         <h2>Experience</h2>
-        <!-- PLACEHOLDER: add real roles, or remove this section -->
-        <p>
-          <strong>[Company Name]</strong> &mdash; [Role Title] ([Start] &ndash; [End])<br>
-          [One or two lines on what you did / built / shipped.]
-        </p>
+        <div class="entry">
+          <div class="entry-header">
+            <strong>Cybersecurity Intern</strong>
+            <span class="entry-date">June 2026 &ndash; August 2026</span>
+          </div>
+          <div class="entry-subheader">
+            <em>AI Institute for Agent-based Cyber Threat Intelligence and Operation</em>
+            <span class="entry-location">Santa Barbara, CA</span>
+          </div>
+          <ul>
+            <li>
+              Developed a cybersecurity research framework to analyze vulnerability information
+              leakage in public intrusion detection system (IDS) rules, using an LLM-based
+              adversary to infer targeted CVEs from rule characteristics
+            </li>
+            <li>
+              Generated and evaluated 417 IDS rule modifications to reduce vulnerability
+              disclosure while measuring their impact on detection behavior
+            </li>
+            <li>
+              Validated modified rules against synthetic exploit and benign network traffic,
+              measuring detection degradation and false-positive behavior
+            </li>
+            <li>
+              Found that only 8/417 modifications (1.9%) consistently prevented correct CVE
+              inference across three trials; among modifications that introduced false
+              positives, 10.5% substantially obscured the vulnerability
+            </li>
+          </ul>
+          <p class="entry-links">
+            <a href="https://github.com/nathanqiuUCSB/reducing-ids-rule-leakage" target="_blank" rel="noopener">View project on GitHub &rarr;</a>
+            &middot;
+            <a href="action-ai-poster.pdf" target="_blank" rel="noopener">Open poster full-size (PDF) &rarr;</a>
+          </p>
+          <div class="poster-embed">
+            <embed src="action-ai-poster.pdf" type="application/pdf">
+          </div>
+        </div>
       </section>
 
       <section id="projects" class="section">
         <h2>Projects</h2>
 
         <div class="project">
-          <h3>Internship Tracker</h3>
+          <div class="entry-header">
+            <h3>GrecoCam <span class="project-subtitle">| Face Detecting Security Camera</span></h3>
+            <span class="entry-date">August 2026</span>
+          </div>
+          <ul>
+            <li>
+              Built a real-time smart door camera on an NVIDIA Jetson Orin Nano that detects
+              and recognizes visitors using YOLO face detection and Facenet512 embeddings
+            </li>
+            <li>
+              Improved recognition under backlighting and rapid movement through face-region
+              exposure metering, contrast enhancement, confidence-based triggering, and
+              temporal voting
+            </li>
+          </ul>
+          <p class="entry-links">
+            <a href="https://github.com/nathanqiuUCSB/GrecoCam" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+          </p>
+        </div>
+
+        <div class="project">
+          <div class="entry-header">
+            <h3>ExtendAble <span class="project-subtitle">| SB Hacks Best Hardware Winner</span></h3>
+            <span class="entry-date">January 2026</span>
+          </div>
+          <ul>
+            <li>
+              Built a voice-controlled robotic arm that detects and manipulates real-world
+              objects using computer vision
+            </li>
+            <li>
+              Implemented an end-to-end system integrating speech-to-text, LLM-based command
+              parsing, YOLO and OpenCV object detection, and servo-level control via a
+              FastAPI backend
+            </li>
+            <li>
+              Developed a partition-based perception algorithm to estimate object position
+              and execute reliable grasping
+            </li>
+          </ul>
+          <p class="entry-links">
+            <a href="https://github.com/nathanqiuUCSB/ExtendAble" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+            &middot;
+            <a href="https://www.youtube.com/watch?v=e0lhDRYjyEcj" target="_blank" rel="noopener">Watch demo &rarr;</a>
+          </p>
+        </div>
+
+        <div class="project">
+          <div class="entry-header">
+            <h3>Chrono <span class="project-subtitle">| Computer Vision-Based Fitness Progress iOS App</span></h3>
+            <span class="entry-date">December 2025 &ndash; January 2026</span>
+          </div>
+          <ul>
+            <li>
+              Built a mobile app using React Native (Expo) with Supabase for authentication,
+              storage, and user data management
+            </li>
+            <li>
+              Designed a social media platform for lifters that allows friends and communities
+              to share fitness progress photos with one another
+            </li>
+            <li>
+              Developed a computer vision alignment pipeline that detects body position to
+              automatically center daily check-in photos and create clean time-lapse videos
+              displaying progress
+            </li>
+          </ul>
+        </div>
+
+        <div class="project">
+          <div class="entry-header">
+            <h3>RedditRadar <span class="project-subtitle">| Unwrapathon Insights Track Winner</span></h3>
+            <span class="entry-date">October 2025</span>
+          </div>
+          <ul>
+            <li>Implemented a Reddit product review web app using Reddit comments scraped by Reddit's API</li>
+            <li>
+              Filtered comments through OpenAI API and a Python comment credibility weighting
+              model to produce 95 percent accurate reviews (0-5 stars) and metrics
+              (accessibility, cost, etc.) on any product reviewed by Reddit
+            </li>
+            <li>
+              Built a full-stack system with a Next.js and Tailwind CSS frontend and a
+              FastAPI backend and deployed the app on Vercel
+            </li>
+          </ul>
+          <p class="entry-links">
+            <a href="https://www.youtube.com/watch?v=Ft5MOh9TTEM&feature=youtu.be" target="_blank" rel="noopener">Watch demo &rarr;</a>
+          </p>
+        </div>
+
+        <div class="project">
+          <div class="entry-header">
+            <h3>Internship Tracker</h3>
+          </div>
           <p>
             A local Flask + SQLite app for organizing an internship search: a status
             pipeline (wishlist &rarr; applied &rarr; interviewing &rarr; offer), a scraper
@@ -82,34 +209,28 @@
             boards, a fuzzy-matching dedup engine, and a review queue with keyword-based
             relevance ranking for security-focused roles.
           </p>
-          <p class="meta">Python &middot; Flask &middot; SQLAlchemy &middot; Web Scraping</p>
           <!-- Add a link once this repo is pushed to GitHub -->
-          <p><a href="#">View on GitHub &rarr;</a></p>
-        </div>
-
-        <div class="project">
-          <h3>[Your next project]</h3>
-          <p>Duplicate this block for each project you want to show off.</p>
-          <p class="meta">Tech &middot; Stack</p>
-          <p><a href="#">View on GitHub &rarr;</a></p>
+          <p class="entry-links"><a href="#">View on GitHub &rarr;</a></p>
         </div>
       </section>
 
       <section id="skills" class="section">
         <h2>Skills</h2>
-        <!-- Edit to match your actual skills -->
-        <p>
-          Python &middot; SQL &middot; Flask &middot; Networking &amp; Security Fundamentals
-          &middot; Threat Detection &middot; Git / GitHub
-        </p>
+        <p><strong>Languages:</strong> Python, C/C++, JavaScript, TypeScript, SQL, R</p>
+        <p><strong>Security:</strong> Suricata, IDS Rule Analysis, Vulnerability Research, CVE/CWE Analysis, Network Traffic Analysis</p>
+        <p><strong>ML and Computer Vision:</strong> PyTorch, TensorFlow, YOLO, OpenCV</p>
+        <p><strong>Systems and Tools:</strong> Claude Code, Git/GitHub, Linux, PowerShell, NVIDIA Jetson Orin Nano</p>
+        <p><strong>Backend and Web:</strong> FastAPI, Next.js, React, React Native, Supabase</p>
       </section>
 
       <section id="contact" class="section">
         <h2>Contact</h2>
         <p>
-          <a href="mailto:nathanqiu@ucsb.edu">nathanqiu@ucsb.edu</a><br>
+          +1 925-899-6476<br>
+          <a href="mailto:nathanrayq@gmail.com">nathanrayq@gmail.com</a><br>
           <a href="https://github.com/nathanqiuUCSB" target="_blank" rel="noopener">GitHub</a><br>
-          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a><br>
+          <a href="resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
         </p>
       </section>
     </main>
